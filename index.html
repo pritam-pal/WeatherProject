@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/css/img/weather.png" type= image/x-icon">
+    <script defer src="/assets/js/app.js"></script>
+    <title>Weather</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGCDM0PV7Z"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QGCDM0PV7Z');
+    </script> -->
+
+</head>
+<body>
+    <section class="desktop-viwe">
+
+    </section>
+    <section class="search-section">
+        <div class="search-block">
+
+            <input class="input-location" type="text" name="location" id="location" placeholder="Search Location">
+            <img class="location-icon search-icon" src="/assets/css/img/search.png" alt="Search">
+            <img class="location-icon locate-icon" src="/assets/css/img/location.png" alt="Locate">
+        </div>
+    </section>
+    <section class="section-weatherOverview">
+        <div class="earth">
+            <!-- <img class="timezone-img" src="/assets/css/img/earth.png" alt="" srcset="" width="40px"> -->
+            <h1 class="timezone">Search Your City</h1>
+        </div>
+
+        <h2 class="current-date"></h2>
+        <div class="min-max">
+            <h4 class="max-temp"></h4>
+            <span class="max-deg"></span>
+            <h5 class="max-short"></h5>
+            <h4 class="min-temp"></h4>
+            <span class="min-deg"></span>
+            <h5 class="min-short"></h5>
+        </div>
+        <div class="temperature">
+            <h2 class="temperature--degree"></h2>
+            <span class="temperature-deg"></span>
+            <h3 class="temperature--short"></h3>
+            <img class="icon" src="/assets/css/icons/01d.png"></img>
+        </div>
+        <div class="feel-box">
+            <h3 class="feel-like"></h3>
+            <span class="feel-deg"></span>
+            <h4 class="feel-like-short"></h4>
+        </div>
+        <h3 class="summery"><h3/>
+
+        <div class="days-chart">
+            <canvas class="chart" id="myChart" style="color: white;"></canvas>
+        </div>
+
+
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+        <div class="wave wave-4"></div>
+    </section>
+
+    <section class="section-weatherDetails">
+
+        <h2 class="current-details">Current Details</h2>
+
+        <div class="current-humidity-box">
+            <h3 class="current-humidity">Humidity</h3>
+            <span class="current-humidity humidity-span"></span>
+        </div>
+
+        <div class="dew-box">
+            <h3 class="current-dewpoint current-dewpoint-w">Dew Point</h3>
+            <span class="current-dewpoint dewpoint-span"></span>
+            <span class="dew--deg"></span>
+            <span class="dew-short"></span>
+        </div>
+
+        <div class="current-pressure-box">
+            <h3 class="current-pressure">Pressure</h3>
+            <span class="current-pressure pressure-span"></span>
+        </div>
+        
+        <div class="current-UV-box">
+            <h3 class="current-UV">UV index</h3>
+            <span class="current-UV UV-span"></span>
+        </div>
+        
+        <div class="current-visibility-box">
+            <h3 class="current-visibility">Visibility</h3>
+            <span class="current-visibility visibility-span"></span>
+        </div>
+        
+    </section>
+
+</body>
+</html>
